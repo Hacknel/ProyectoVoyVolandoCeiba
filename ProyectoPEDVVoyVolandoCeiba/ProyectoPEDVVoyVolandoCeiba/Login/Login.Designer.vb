@@ -155,7 +155,7 @@ Partial Class Login
         Me.btnMostrarContra.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray
         Me.btnMostrarContra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
         Me.btnMostrarContra.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMostrarContra.Location = New System.Drawing.Point(347, 231)
+        Me.btnMostrarContra.Location = New System.Drawing.Point(347, 236)
         Me.btnMostrarContra.Name = "btnMostrarContra"
         Me.btnMostrarContra.Size = New System.Drawing.Size(35, 35)
         Me.btnMostrarContra.TabIndex = 8
