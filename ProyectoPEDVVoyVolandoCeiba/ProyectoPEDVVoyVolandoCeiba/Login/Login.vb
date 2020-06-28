@@ -45,6 +45,9 @@ Public Class Login
     End Sub
 
     Private Sub btnIngresar_Click(sender As Object, e As EventArgs) Handles btnIngresar.Click
+        Me.Hide()
+        MenuPrincipal.Show()
+
 
     End Sub
 #End Region
