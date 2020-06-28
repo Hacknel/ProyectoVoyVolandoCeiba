@@ -82,7 +82,7 @@ Partial Class Login
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel1.Location = New System.Drawing.Point(0, 480)
+        Me.Panel1.Location = New System.Drawing.Point(0, 472)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(389, 15)
         Me.Panel1.TabIndex = 1
@@ -166,7 +166,7 @@ Partial Class Login
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(104, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(389, 495)
+        Me.ClientSize = New System.Drawing.Size(389, 487)
         Me.Controls.Add(Me.btnMostrarContra)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.btnIngresar)
