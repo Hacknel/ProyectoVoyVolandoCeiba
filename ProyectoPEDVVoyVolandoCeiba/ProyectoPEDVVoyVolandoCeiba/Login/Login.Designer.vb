@@ -22,6 +22,7 @@ Partial Class Login
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
         Me.panelTitulo = New System.Windows.Forms.Panel()
         Me.btnMinimizar = New System.Windows.Forms.Button()
@@ -34,7 +35,10 @@ Partial Class Login
         Me.btnIngresar = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.btnMostrarContra = New System.Windows.Forms.Button()
+        Me.errorValidacion = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.toolTip = New System.Windows.Forms.ToolTip(Me.components)
         Me.panelTitulo.SuspendLayout()
+        CType(Me.errorValidacion, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'panelTitulo
@@ -161,6 +165,10 @@ Partial Class Login
         Me.btnMostrarContra.TabIndex = 8
         Me.btnMostrarContra.UseVisualStyleBackColor = True
         '
+        'errorValidacion
+        '
+        Me.errorValidacion.ContainerControl = Me
+        '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -183,6 +191,7 @@ Partial Class Login
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         Me.panelTitulo.ResumeLayout(False)
+        CType(Me.errorValidacion, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -199,4 +208,6 @@ Partial Class Login
     Friend WithEvents btnIngresar As Button
     Friend WithEvents Panel2 As Panel
     Friend WithEvents btnMostrarContra As Button
+    Friend WithEvents errorValidacion As ErrorProvider
+    Friend WithEvents toolTip As ToolTip
 End Class
