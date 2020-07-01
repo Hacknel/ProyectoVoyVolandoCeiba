@@ -45,23 +45,8 @@ Public Class MenuPrincipal
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub
 
-    Private Sub ventanaInicio_Click(sender As Object, e As EventArgs) Handles ventanaInicio.Click
-
-    End Sub
-
-    Private Sub ventanaAdministracion_Click(sender As Object, e As EventArgs) Handles ventanaAdministracion.Click
-
-    End Sub
-
-    Private Sub ventanaClientes_Click(sender As Object, e As EventArgs) Handles ventanaClientes.Click
-        abrirFormulario(ventanaClientes)
-    End Sub
-
-    Private Sub ventanaPersonal_Click(sender As Object, e As EventArgs) Handles ventanaPersonal.Click
-
-    End Sub
 #End Region
-    Private Sub abrirFormulario(ByVal formHijo As Object)
+    Private Sub abrirFormulario(ByVal formHijo As Form)
 
         If panelForms.Controls.Count > 0 Then
 
@@ -78,5 +63,28 @@ Public Class MenuPrincipal
 
         frm.Show()
     End Sub
+    Private Sub btnDesplegarMenu_Click(sender As Object, e As EventArgs) Handles btnDesplegarMenu.Click
+
+    End Sub
+    Private Sub btnInicio_Click(sender As Object, e As EventArgs) Handles btnInicio.Click
+
+    End Sub
+
+    Private Sub btnMandado_Click(sender As Object, e As EventArgs) Handles btnMandado.Click
+
+    End Sub
+
+    Private Sub btnEstadoMandado_Click(sender As Object, e As EventArgs) Handles btnEstadoMandado.Click
+
+    End Sub
+
+    Private Sub btnAdmin_Click(sender As Object, e As EventArgs) Handles btnAdmin.Click
+
+    End Sub
+
+    Private Sub btnPersonal_Click(sender As Object, e As EventArgs) Handles btnPersonal.Click
+
+    End Sub
+
 
 End Class

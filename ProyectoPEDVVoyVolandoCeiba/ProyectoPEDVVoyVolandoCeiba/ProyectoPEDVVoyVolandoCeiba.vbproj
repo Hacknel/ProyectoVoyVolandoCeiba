@@ -86,10 +86,10 @@
     <Compile Include="MenuPrincipal\MenuPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuPrincipal\ventanaClientes.Designer.vb">
-      <DependentUpon>ventanaClientes.vb</DependentUpon>
+    <Compile Include="MenuPrincipal\Opciones\bienvenidaInicio.Designer.vb">
+      <DependentUpon>bienvenidaInicio.vb</DependentUpon>
     </Compile>
-    <Compile Include="MenuPrincipal\ventanaClientes.vb">
+    <Compile Include="MenuPrincipal\Opciones\bienvenidaInicio.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -116,8 +116,8 @@
     <EmbeddedResource Include="MenuPrincipal\MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuPrincipal\ventanaClientes.resx">
-      <DependentUpon>ventanaClientes.vb</DependentUpon>
+    <EmbeddedResource Include="MenuPrincipal\Opciones\bienvenidaInicio.resx">
+      <DependentUpon>bienvenidaInicio.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -138,7 +138,9 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\icons8_administrator_male_64.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Close Window_ 2 48px.png" />
   </ItemGroup>
@@ -168,6 +170,54 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_show_password_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_home_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_package_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_package_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_package_641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_verified_scroll_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_database_administrator_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_user_groups_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_home_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_package_481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_data_quality_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_database_administrator_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_user_groups_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User Groups_48px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Producto_48px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_home_address_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Businessman_48px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
