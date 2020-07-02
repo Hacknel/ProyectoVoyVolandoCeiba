@@ -28,7 +28,7 @@ Partial Class bienvenidaInicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(671, 503)
+        Me.ClientSize = New System.Drawing.Size(769, 572)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "bienvenidaInicio"
         Me.Text = "bienvenidaInicio"
