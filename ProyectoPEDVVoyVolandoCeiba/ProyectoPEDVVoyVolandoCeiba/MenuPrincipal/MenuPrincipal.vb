@@ -72,24 +72,80 @@ Public Class MenuPrincipal
             panelIOpciones.Width = 225
         End If
     End Sub
+
     Private Sub btnInicio_Click(sender As Object, e As EventArgs) Handles btnInicio.Click
+        PanelIni.Visible = True
+        btnInicio.BackColor = Color.DimGray
+
+        PanelManda.Visible = False
+        btnMandado.BackColor = Color.Transparent
+
+        PanelEsta.Visible = False
+        btnEstadoMandado.BackColor = Color.Transparent
+
+        PanelAdmin.Visible = False
+        btnAdmin.BackColor = Color.Transparent
+
+        PanelPers.Visible = False
+        btnPersonal.BackColor = Color.Transparent
+
         abrirFormulario(bienvenidaInicio)
     End Sub
 
     Private Sub btnMandado_Click(sender As Object, e As EventArgs) Handles btnMandado.Click
+        PanelIni.Visible = False
+        btnInicio.BackColor = Color.Transparent
 
+        PanelManda.Visible = True
+        btnMandado.BackColor = Color.DimGray
+
+        PanelEsta.Visible = False
+        btnEstadoMandado.BackColor = Color.Transparent
+
+        PanelAdmin.Visible = False
+        btnAdmin.BackColor = Color.Transparent
+
+        PanelPers.Visible = False
+        btnPersonal.BackColor = Color.Transparent
     End Sub
 
     Private Sub btnEstadoMandado_Click(sender As Object, e As EventArgs) Handles btnEstadoMandado.Click
-
+        PanelIni.Visible = False
+        btnInicio.BackColor = Color.Transparent
+        PanelManda.Visible = False
+        btnMandado.BackColor = Color.Transparent
+        PanelEsta.Visible = True
+        btnEstadoMandado.BackColor = Color.DimGray
+        PanelAdmin.Visible = False
+        btnAdmin.BackColor = Color.Transparent
+        PanelPers.Visible = False
+        btnPersonal.BackColor = Color.Transparent
     End Sub
 
     Private Sub btnAdmin_Click(sender As Object, e As EventArgs) Handles btnAdmin.Click
-
+        PanelIni.Visible = False
+        btnInicio.BackColor = Color.Transparent
+        PanelManda.Visible = False
+        btnMandado.BackColor = Color.Transparent
+        PanelEsta.Visible = False
+        btnEstadoMandado.BackColor = Color.Transparent
+        PanelAdmin.Visible = True
+        btnAdmin.BackColor = Color.DimGray
+        PanelPers.Visible = False
+        btnPersonal.BackColor = Color.Transparent
     End Sub
 
     Private Sub btnPersonal_Click(sender As Object, e As EventArgs) Handles btnPersonal.Click
-
+        PanelIni.Visible = False
+        btnInicio.BackColor = Color.Transparent
+        PanelManda.Visible = False
+        btnMandado.BackColor = Color.Transparent
+        PanelEsta.Visible = False
+        btnEstadoMandado.BackColor = Color.Transparent
+        PanelAdmin.Visible = False
+        btnAdmin.BackColor = Color.Transparent
+        PanelPers.Visible = True
+        btnPersonal.BackColor = Color.DimGray
     End Sub
 
 
