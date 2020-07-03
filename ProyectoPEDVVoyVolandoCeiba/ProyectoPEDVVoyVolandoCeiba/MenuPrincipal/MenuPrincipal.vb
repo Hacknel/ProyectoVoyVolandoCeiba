@@ -11,7 +11,6 @@ Public Class MenuPrincipal
 
     Private Sub btnCerrar_Click(sender As Object, e As EventArgs) Handles btnCerrar.Click
         End
-
     End Sub
 
     Private Sub btnMinimizar_Click(sender As Object, e As EventArgs) Handles btnMinimizar.Click
@@ -86,9 +85,6 @@ Public Class MenuPrincipal
         PanelAdmin.Visible = False
         btnAdmin.BackColor = Color.Transparent
 
-        PanelPers.Visible = False
-        btnPersonal.BackColor = Color.Transparent
-
         abrirFormulario(bienvenidaInicio)
     End Sub
 
@@ -105,9 +101,6 @@ Public Class MenuPrincipal
         PanelAdmin.Visible = False
         btnAdmin.BackColor = Color.Transparent
 
-        PanelPers.Visible = False
-        btnPersonal.BackColor = Color.Transparent
-
     End Sub
 
     Private Sub btnEstadoMandado_Click(sender As Object, e As EventArgs) Handles btnEstadoMandado.Click
@@ -122,9 +115,6 @@ Public Class MenuPrincipal
 
         PanelAdmin.Visible = False
         btnAdmin.BackColor = Color.Transparent
-
-        PanelPers.Visible = False
-        btnPersonal.BackColor = Color.Transparent
 
     End Sub
 
@@ -141,27 +131,5 @@ Public Class MenuPrincipal
         PanelAdmin.Visible = True
         btnAdmin.BackColor = Color.DimGray
 
-        PanelPers.Visible = False
-        btnPersonal.BackColor = Color.Transparent
-
-    End Sub
-
-    Private Sub btnPersonal_Click(sender As Object, e As EventArgs) Handles btnPersonal.Click
-        PanelIni.Visible = False
-        btnInicio.BackColor = Color.Transparent
-
-        PanelManda.Visible = False
-        btnMandado.BackColor = Color.Transparent
-
-        PanelEsta.Visible = False
-        btnEstadoMandado.BackColor = Color.Transparent
-
-        PanelAdmin.Visible = False
-        btnAdmin.BackColor = Color.Transparent
-
-        PanelPers.Visible = True
-        btnPersonal.BackColor = Color.DimGray
-
-        abrirFormulario(personal)
     End Sub
 End Class
