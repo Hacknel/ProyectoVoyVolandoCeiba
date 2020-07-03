@@ -65,9 +65,15 @@ Public Class MenuPrincipal
     End Sub
     Private Sub btnDesplegarMenu_Click(sender As Object, e As EventArgs) Handles btnDesplegarMenu.Click
 
+        If panelIOpciones.Width = 225 Then
+            panelIOpciones.Width = 65
+
+        Else
+            panelIOpciones.Width = 225
+        End If
     End Sub
     Private Sub btnInicio_Click(sender As Object, e As EventArgs) Handles btnInicio.Click
-
+        abrirFormulario(bienvenidaInicio)
     End Sub
 
     Private Sub btnMandado_Click(sender As Object, e As EventArgs) Handles btnMandado.Click

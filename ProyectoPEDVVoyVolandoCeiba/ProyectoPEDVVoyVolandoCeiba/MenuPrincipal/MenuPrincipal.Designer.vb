@@ -42,6 +42,11 @@ Partial Class MenuPrincipal
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.panelForms = New System.Windows.Forms.Panel()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.Panel7 = New System.Windows.Forms.Panel()
         Me.panelVentanas.SuspendLayout()
         Me.panelIOpciones.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -53,8 +58,8 @@ Partial Class MenuPrincipal
         'panelVentanas
         '
         Me.panelVentanas.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(100, Byte), Integer))
-        Me.panelVentanas.Controls.Add(Me.btnDesplegarMenu)
         Me.panelVentanas.Controls.Add(Me.btnRestaurar)
+        Me.panelVentanas.Controls.Add(Me.btnDesplegarMenu)
         Me.panelVentanas.Controls.Add(Me.btnMaximizar)
         Me.panelVentanas.Controls.Add(Me.btnMinimizar)
         Me.panelVentanas.Controls.Add(Me.btnCerrar)
@@ -66,7 +71,6 @@ Partial Class MenuPrincipal
         '
         'btnDesplegarMenu
         '
-        Me.btnDesplegarMenu.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnDesplegarMenu.BackgroundImage = Global.ProyectoPEDVVoyVolandoCeiba.My.Resources.Resources.Menu_48px
         Me.btnDesplegarMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnDesplegarMenu.Cursor = System.Windows.Forms.Cursors.Hand
@@ -90,9 +94,9 @@ Partial Class MenuPrincipal
         Me.btnRestaurar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray
         Me.btnRestaurar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
         Me.btnRestaurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRestaurar.Location = New System.Drawing.Point(1140, 10)
+        Me.btnRestaurar.Location = New System.Drawing.Point(1131, 5)
         Me.btnRestaurar.Name = "btnRestaurar"
-        Me.btnRestaurar.Size = New System.Drawing.Size(35, 35)
+        Me.btnRestaurar.Size = New System.Drawing.Size(40, 40)
         Me.btnRestaurar.TabIndex = 5
         Me.btnRestaurar.UseVisualStyleBackColor = True
         Me.btnRestaurar.Visible = False
@@ -107,9 +111,9 @@ Partial Class MenuPrincipal
         Me.btnMaximizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray
         Me.btnMaximizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
         Me.btnMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMaximizar.Location = New System.Drawing.Point(1140, 10)
+        Me.btnMaximizar.Location = New System.Drawing.Point(1131, 5)
         Me.btnMaximizar.Name = "btnMaximizar"
-        Me.btnMaximizar.Size = New System.Drawing.Size(35, 35)
+        Me.btnMaximizar.Size = New System.Drawing.Size(40, 40)
         Me.btnMaximizar.TabIndex = 4
         Me.btnMaximizar.UseVisualStyleBackColor = True
         '
@@ -123,9 +127,9 @@ Partial Class MenuPrincipal
         Me.btnMinimizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray
         Me.btnMinimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
         Me.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMinimizar.Location = New System.Drawing.Point(1085, 10)
+        Me.btnMinimizar.Location = New System.Drawing.Point(1076, 5)
         Me.btnMinimizar.Name = "btnMinimizar"
-        Me.btnMinimizar.Size = New System.Drawing.Size(35, 35)
+        Me.btnMinimizar.Size = New System.Drawing.Size(40, 40)
         Me.btnMinimizar.TabIndex = 3
         Me.btnMinimizar.UseVisualStyleBackColor = True
         '
@@ -139,15 +143,20 @@ Partial Class MenuPrincipal
         Me.btnCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
         Me.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCerrar.Location = New System.Drawing.Point(1188, 10)
+        Me.btnCerrar.Location = New System.Drawing.Point(1187, 5)
         Me.btnCerrar.Name = "btnCerrar"
-        Me.btnCerrar.Size = New System.Drawing.Size(35, 35)
+        Me.btnCerrar.Size = New System.Drawing.Size(40, 40)
         Me.btnCerrar.TabIndex = 2
         Me.btnCerrar.UseVisualStyleBackColor = True
         '
         'panelIOpciones
         '
         Me.panelIOpciones.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.panelIOpciones.Controls.Add(Me.Panel7)
+        Me.panelIOpciones.Controls.Add(Me.Panel6)
+        Me.panelIOpciones.Controls.Add(Me.Panel5)
+        Me.panelIOpciones.Controls.Add(Me.Panel4)
+        Me.panelIOpciones.Controls.Add(Me.Panel3)
         Me.panelIOpciones.Controls.Add(Me.Panel2)
         Me.panelIOpciones.Controls.Add(Me.btnInicio)
         Me.panelIOpciones.Controls.Add(Me.btnEstadoMandado)
@@ -158,7 +167,7 @@ Partial Class MenuPrincipal
         Me.panelIOpciones.Dock = System.Windows.Forms.DockStyle.Left
         Me.panelIOpciones.Location = New System.Drawing.Point(0, 51)
         Me.panelIOpciones.Name = "panelIOpciones"
-        Me.panelIOpciones.Size = New System.Drawing.Size(299, 824)
+        Me.panelIOpciones.Size = New System.Drawing.Size(300, 824)
         Me.panelIOpciones.TabIndex = 1
         '
         'Panel2
@@ -173,9 +182,9 @@ Partial Class MenuPrincipal
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(-12, 8)
+        Me.PictureBox1.Location = New System.Drawing.Point(-23, 0)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(111, 93)
+        Me.PictureBox1.Size = New System.Drawing.Size(121, 98)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
@@ -198,16 +207,16 @@ Partial Class MenuPrincipal
         Me.btnInicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.btnInicio.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnInicio.FlatAppearance.BorderColor = System.Drawing.Color.Gray
-        Me.btnInicio.FlatAppearance.BorderSize = 2
+        Me.btnInicio.FlatAppearance.BorderSize = 0
         Me.btnInicio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnInicio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray
         Me.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnInicio.Font = New System.Drawing.Font("Impact", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnInicio.ForeColor = System.Drawing.Color.White
         Me.btnInicio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnInicio.Location = New System.Drawing.Point(0, 134)
+        Me.btnInicio.Location = New System.Drawing.Point(12, 134)
         Me.btnInicio.Name = "btnInicio"
-        Me.btnInicio.Size = New System.Drawing.Size(299, 64)
+        Me.btnInicio.Size = New System.Drawing.Size(276, 64)
         Me.btnInicio.TabIndex = 4
         Me.btnInicio.Text = "Inicio"
         Me.btnInicio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -216,41 +225,41 @@ Partial Class MenuPrincipal
         'btnEstadoMandado
         '
         Me.btnEstadoMandado.BackColor = System.Drawing.Color.Transparent
-        Me.btnEstadoMandado.BackgroundImage = Global.ProyectoPEDVVoyVolandoCeiba.My.Resources.Resources.icons8_data_quality_48
+        Me.btnEstadoMandado.BackgroundImage = CType(resources.GetObject("btnEstadoMandado.BackgroundImage"), System.Drawing.Image)
         Me.btnEstadoMandado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.btnEstadoMandado.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnEstadoMandado.FlatAppearance.BorderColor = System.Drawing.Color.Gray
-        Me.btnEstadoMandado.FlatAppearance.BorderSize = 2
+        Me.btnEstadoMandado.FlatAppearance.BorderSize = 0
         Me.btnEstadoMandado.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnEstadoMandado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray
         Me.btnEstadoMandado.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEstadoMandado.Font = New System.Drawing.Font("Impact", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEstadoMandado.ForeColor = System.Drawing.Color.White
         Me.btnEstadoMandado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnEstadoMandado.Location = New System.Drawing.Point(0, 305)
+        Me.btnEstadoMandado.Location = New System.Drawing.Point(12, 305)
         Me.btnEstadoMandado.Name = "btnEstadoMandado"
-        Me.btnEstadoMandado.Size = New System.Drawing.Size(299, 64)
+        Me.btnEstadoMandado.Size = New System.Drawing.Size(276, 64)
         Me.btnEstadoMandado.TabIndex = 3
-        Me.btnEstadoMandado.Text = "          Estado del mandado"
+        Me.btnEstadoMandado.Text = "            Estado del mandado"
         Me.btnEstadoMandado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnEstadoMandado.UseVisualStyleBackColor = False
         '
         'btnAdmin
         '
         Me.btnAdmin.BackColor = System.Drawing.Color.Transparent
-        Me.btnAdmin.BackgroundImage = Global.ProyectoPEDVVoyVolandoCeiba.My.Resources.Resources.icons8_database_administrator_48
+        Me.btnAdmin.BackgroundImage = CType(resources.GetObject("btnAdmin.BackgroundImage"), System.Drawing.Image)
         Me.btnAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.btnAdmin.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnAdmin.FlatAppearance.BorderColor = System.Drawing.Color.Gray
-        Me.btnAdmin.FlatAppearance.BorderSize = 2
+        Me.btnAdmin.FlatAppearance.BorderSize = 0
         Me.btnAdmin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnAdmin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray
         Me.btnAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAdmin.Font = New System.Drawing.Font("Impact", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAdmin.ForeColor = System.Drawing.Color.White
-        Me.btnAdmin.Location = New System.Drawing.Point(0, 388)
+        Me.btnAdmin.Location = New System.Drawing.Point(12, 388)
         Me.btnAdmin.Name = "btnAdmin"
-        Me.btnAdmin.Size = New System.Drawing.Size(299, 64)
+        Me.btnAdmin.Size = New System.Drawing.Size(276, 64)
         Me.btnAdmin.TabIndex = 5
         Me.btnAdmin.Text = "      Administración"
         Me.btnAdmin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -263,16 +272,16 @@ Partial Class MenuPrincipal
         Me.btnMandado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.btnMandado.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnMandado.FlatAppearance.BorderColor = System.Drawing.Color.Gray
-        Me.btnMandado.FlatAppearance.BorderSize = 2
+        Me.btnMandado.FlatAppearance.BorderSize = 0
         Me.btnMandado.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnMandado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray
         Me.btnMandado.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMandado.Font = New System.Drawing.Font("Impact", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnMandado.ForeColor = System.Drawing.Color.White
         Me.btnMandado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnMandado.Location = New System.Drawing.Point(0, 220)
+        Me.btnMandado.Location = New System.Drawing.Point(12, 219)
         Me.btnMandado.Name = "btnMandado"
-        Me.btnMandado.Size = New System.Drawing.Size(299, 64)
+        Me.btnMandado.Size = New System.Drawing.Size(276, 64)
         Me.btnMandado.TabIndex = 2
         Me.btnMandado.Text = "Mandado"
         Me.btnMandado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -285,16 +294,16 @@ Partial Class MenuPrincipal
         Me.btnPersonal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.btnPersonal.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnPersonal.FlatAppearance.BorderColor = System.Drawing.Color.Gray
-        Me.btnPersonal.FlatAppearance.BorderSize = 2
+        Me.btnPersonal.FlatAppearance.BorderSize = 0
         Me.btnPersonal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnPersonal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray
         Me.btnPersonal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPersonal.Font = New System.Drawing.Font("Impact", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPersonal.ForeColor = System.Drawing.Color.White
         Me.btnPersonal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnPersonal.Location = New System.Drawing.Point(0, 473)
+        Me.btnPersonal.Location = New System.Drawing.Point(12, 473)
         Me.btnPersonal.Name = "btnPersonal"
-        Me.btnPersonal.Size = New System.Drawing.Size(299, 64)
+        Me.btnPersonal.Size = New System.Drawing.Size(276, 64)
         Me.btnPersonal.TabIndex = 7
         Me.btnPersonal.Text = "Personal"
         Me.btnPersonal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -336,10 +345,50 @@ Partial Class MenuPrincipal
         '
         Me.panelForms.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.panelForms.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.panelForms.Location = New System.Drawing.Point(299, 51)
+        Me.panelForms.Location = New System.Drawing.Point(300, 51)
         Me.panelForms.Name = "panelForms"
-        Me.panelForms.Size = New System.Drawing.Size(936, 824)
+        Me.panelForms.Size = New System.Drawing.Size(935, 824)
         Me.panelForms.TabIndex = 2
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.Silver
+        Me.Panel3.Location = New System.Drawing.Point(0, 134)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(10, 64)
+        Me.Panel3.TabIndex = 0
+        '
+        'Panel4
+        '
+        Me.Panel4.BackColor = System.Drawing.Color.Silver
+        Me.Panel4.Location = New System.Drawing.Point(0, 219)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(10, 64)
+        Me.Panel4.TabIndex = 1
+        '
+        'Panel5
+        '
+        Me.Panel5.BackColor = System.Drawing.Color.Silver
+        Me.Panel5.Location = New System.Drawing.Point(0, 305)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(10, 64)
+        Me.Panel5.TabIndex = 2
+        '
+        'Panel6
+        '
+        Me.Panel6.BackColor = System.Drawing.Color.Silver
+        Me.Panel6.Location = New System.Drawing.Point(0, 388)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(10, 64)
+        Me.Panel6.TabIndex = 2
+        '
+        'Panel7
+        '
+        Me.Panel7.BackColor = System.Drawing.Color.Silver
+        Me.Panel7.Location = New System.Drawing.Point(0, 473)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(10, 64)
+        Me.Panel7.TabIndex = 2
         '
         'MenuPrincipal
         '
@@ -385,4 +434,9 @@ Partial Class MenuPrincipal
     Friend WithEvents Label2 As Label
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label1 As Label
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Panel7 As Panel
+    Friend WithEvents Panel6 As Panel
+    Friend WithEvents Panel5 As Panel
+    Friend WithEvents Panel4 As Panel
 End Class
