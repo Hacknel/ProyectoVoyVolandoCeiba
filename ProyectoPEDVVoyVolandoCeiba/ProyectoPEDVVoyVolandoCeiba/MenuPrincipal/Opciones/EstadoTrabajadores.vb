@@ -37,4 +37,8 @@ Public Class EstadoTrabajadores
     Private Sub btnMinimizar_Click(sender As Object, e As EventArgs) Handles btnMinimizar.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
+
+    Private Sub dgvEstadoTraba_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvEstadoTraba.CellContentClick
+
+    End Sub
 End Class

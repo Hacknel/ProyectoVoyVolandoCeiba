@@ -30,35 +30,35 @@ Partial Class MenuPrincipal
         Me.btnMinimizar = New System.Windows.Forms.Button()
         Me.btnCerrar = New System.Windows.Forms.Button()
         Me.panelIOpciones = New System.Windows.Forms.Panel()
-        Me.PanelAdmin = New System.Windows.Forms.Panel()
-        Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnInicio = New System.Windows.Forms.Button()
         Me.btnEstadoMandado = New System.Windows.Forms.Button()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.PanelIni = New System.Windows.Forms.Panel()
         Me.btnAdmin = New System.Windows.Forms.Button()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.PanelManda = New System.Windows.Forms.Panel()
         Me.btnMandado = New System.Windows.Forms.Button()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.PanelEsta = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.PanelEsta = New System.Windows.Forms.Panel()
-        Me.PanelManda = New System.Windows.Forms.Panel()
-        Me.PanelIni = New System.Windows.Forms.Panel()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.PanelAdmin = New System.Windows.Forms.Panel()
         Me.PanelForms = New System.Windows.Forms.Panel()
         Me.panelVentanas.SuspendLayout()
         Me.panelIOpciones.SuspendLayout()
-        Me.Panel6.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel5.SuspendLayout()
+        Me.Panel4.SuspendLayout()
+        Me.Panel3.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel3.SuspendLayout()
-        Me.Panel4.SuspendLayout()
-        Me.Panel5.SuspendLayout()
+        Me.Panel6.SuspendLayout()
         Me.SuspendLayout()
         '
         'panelVentanas
@@ -174,24 +174,6 @@ Partial Class MenuPrincipal
         Me.panelIOpciones.Size = New System.Drawing.Size(300, 824)
         Me.panelIOpciones.TabIndex = 1
         '
-        'PanelAdmin
-        '
-        Me.PanelAdmin.BackColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(118, Byte), Integer))
-        Me.PanelAdmin.Location = New System.Drawing.Point(0, 0)
-        Me.PanelAdmin.Name = "PanelAdmin"
-        Me.PanelAdmin.Size = New System.Drawing.Size(10, 64)
-        Me.PanelAdmin.TabIndex = 6
-        Me.PanelAdmin.Visible = False
-        '
-        'Panel6
-        '
-        Me.Panel6.BackColor = System.Drawing.Color.Silver
-        Me.Panel6.Controls.Add(Me.PanelAdmin)
-        Me.Panel6.Location = New System.Drawing.Point(0, 388)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(10, 64)
-        Me.Panel6.TabIndex = 2
-        '
         'Panel2
         '
         Me.Panel2.Controls.Add(Me.PictureBox1)
@@ -264,6 +246,24 @@ Partial Class MenuPrincipal
         Me.btnEstadoMandado.Text = "      Estado del mandado"
         Me.btnEstadoMandado.UseVisualStyleBackColor = False
         '
+        'Panel5
+        '
+        Me.Panel5.BackColor = System.Drawing.Color.Silver
+        Me.Panel5.Controls.Add(Me.PanelIni)
+        Me.Panel5.Location = New System.Drawing.Point(0, 134)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(10, 64)
+        Me.Panel5.TabIndex = 9
+        '
+        'PanelIni
+        '
+        Me.PanelIni.BackColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(118, Byte), Integer))
+        Me.PanelIni.Location = New System.Drawing.Point(0, 0)
+        Me.PanelIni.Name = "PanelIni"
+        Me.PanelIni.Size = New System.Drawing.Size(10, 64)
+        Me.PanelIni.TabIndex = 12
+        Me.PanelIni.Visible = False
+        '
         'btnAdmin
         '
         Me.btnAdmin.BackColor = System.Drawing.Color.Transparent
@@ -285,6 +285,24 @@ Partial Class MenuPrincipal
         Me.btnAdmin.Text = "Administración"
         Me.btnAdmin.UseVisualStyleBackColor = False
         '
+        'Panel4
+        '
+        Me.Panel4.BackColor = System.Drawing.Color.Silver
+        Me.Panel4.Controls.Add(Me.PanelManda)
+        Me.Panel4.Location = New System.Drawing.Point(0, 219)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(10, 64)
+        Me.Panel4.TabIndex = 8
+        '
+        'PanelManda
+        '
+        Me.PanelManda.BackColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(118, Byte), Integer))
+        Me.PanelManda.Location = New System.Drawing.Point(0, 0)
+        Me.PanelManda.Name = "PanelManda"
+        Me.PanelManda.Size = New System.Drawing.Size(10, 64)
+        Me.PanelManda.TabIndex = 11
+        Me.PanelManda.Visible = False
+        '
         'btnMandado
         '
         Me.btnMandado.BackColor = System.Drawing.Color.Transparent
@@ -305,6 +323,24 @@ Partial Class MenuPrincipal
         Me.btnMandado.TabIndex = 2
         Me.btnMandado.Text = "Mandado"
         Me.btnMandado.UseVisualStyleBackColor = False
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.Silver
+        Me.Panel3.Controls.Add(Me.PanelEsta)
+        Me.Panel3.Location = New System.Drawing.Point(0, 305)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(10, 64)
+        Me.Panel3.TabIndex = 7
+        '
+        'PanelEsta
+        '
+        Me.PanelEsta.BackColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(118, Byte), Integer))
+        Me.PanelEsta.Location = New System.Drawing.Point(0, 0)
+        Me.PanelEsta.Name = "PanelEsta"
+        Me.PanelEsta.Size = New System.Drawing.Size(10, 64)
+        Me.PanelEsta.TabIndex = 10
+        Me.PanelEsta.Visible = False
         '
         'Panel1
         '
@@ -338,59 +374,23 @@ Partial Class MenuPrincipal
         Me.PictureBox2.TabIndex = 8
         Me.PictureBox2.TabStop = False
         '
-        'Panel3
+        'Panel6
         '
-        Me.Panel3.BackColor = System.Drawing.Color.Silver
-        Me.Panel3.Controls.Add(Me.PanelEsta)
-        Me.Panel3.Location = New System.Drawing.Point(0, 305)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(10, 64)
-        Me.Panel3.TabIndex = 7
+        Me.Panel6.BackColor = System.Drawing.Color.Silver
+        Me.Panel6.Controls.Add(Me.PanelAdmin)
+        Me.Panel6.Location = New System.Drawing.Point(0, 388)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(10, 64)
+        Me.Panel6.TabIndex = 2
         '
-        'Panel4
+        'PanelAdmin
         '
-        Me.Panel4.BackColor = System.Drawing.Color.Silver
-        Me.Panel4.Controls.Add(Me.PanelManda)
-        Me.Panel4.Location = New System.Drawing.Point(0, 219)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(10, 64)
-        Me.Panel4.TabIndex = 8
-        '
-        'Panel5
-        '
-        Me.Panel5.BackColor = System.Drawing.Color.Silver
-        Me.Panel5.Controls.Add(Me.PanelIni)
-        Me.Panel5.Location = New System.Drawing.Point(0, 134)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(10, 64)
-        Me.Panel5.TabIndex = 9
-        '
-        'PanelEsta
-        '
-        Me.PanelEsta.BackColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(118, Byte), Integer))
-        Me.PanelEsta.Location = New System.Drawing.Point(0, 0)
-        Me.PanelEsta.Name = "PanelEsta"
-        Me.PanelEsta.Size = New System.Drawing.Size(10, 64)
-        Me.PanelEsta.TabIndex = 10
-        Me.PanelEsta.Visible = False
-        '
-        'PanelManda
-        '
-        Me.PanelManda.BackColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(118, Byte), Integer))
-        Me.PanelManda.Location = New System.Drawing.Point(0, 0)
-        Me.PanelManda.Name = "PanelManda"
-        Me.PanelManda.Size = New System.Drawing.Size(10, 64)
-        Me.PanelManda.TabIndex = 11
-        Me.PanelManda.Visible = False
-        '
-        'PanelIni
-        '
-        Me.PanelIni.BackColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(118, Byte), Integer))
-        Me.PanelIni.Location = New System.Drawing.Point(0, 0)
-        Me.PanelIni.Name = "PanelIni"
-        Me.PanelIni.Size = New System.Drawing.Size(10, 64)
-        Me.PanelIni.TabIndex = 12
-        Me.PanelIni.Visible = False
+        Me.PanelAdmin.BackColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(118, Byte), Integer))
+        Me.PanelAdmin.Location = New System.Drawing.Point(0, 0)
+        Me.PanelAdmin.Name = "PanelAdmin"
+        Me.PanelAdmin.Size = New System.Drawing.Size(10, 64)
+        Me.PanelAdmin.TabIndex = 6
+        Me.PanelAdmin.Visible = False
         '
         'PanelForms
         '
@@ -416,16 +416,16 @@ Partial Class MenuPrincipal
         Me.Text = "MenuPrincipal"
         Me.panelVentanas.ResumeLayout(False)
         Me.panelIOpciones.ResumeLayout(False)
-        Me.Panel6.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel5.ResumeLayout(False)
+        Me.Panel4.ResumeLayout(False)
+        Me.Panel3.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel4.ResumeLayout(False)
-        Me.Panel5.ResumeLayout(False)
+        Me.Panel6.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub

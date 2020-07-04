@@ -1,36 +1,63 @@
 ﻿Imports System.ComponentModel
-
+Imports System.Runtime.InteropServices
 Public Class AgregarCliente
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
+#Region "Move form"
+    <DllImport("user32.DLL", EntryPoint:="ReleaseCapture")>
+    Private Shared Sub ReleaseCapture()
+    End Sub
+    <DllImport("user32.DLL", EntryPoint:="SendMessage")>
+    Private Shared Sub SendMessage(hWnd As IntPtr, wMs As Integer, wParam As Integer, lParam As Integer)
 
     End Sub
+
+    Private Sub panelTitulo_MouseMove(sender As Object, e As MouseEventArgs) Handles PanelBotones.MouseMove
+        ReleaseCapture()
+        SendMessage(Me.Handle, &H112&, &HF012&, 0)
+
+    End Sub
+
+    Private Sub PanelBotones_Paint(sender As Object, e As PaintEventArgs) Handles PanelBotones.Paint
+        ReleaseCapture()
+        SendMessage(Me.Handle, &H112&, &HF012&, 0)
+    End Sub
+
+#End Region
 
     Private Sub btnRegistrar_Click(sender As Object, e As EventArgs) Handles btnRegistrar.Click
 
         Try
-            If Me.ValidateChildren And txtTelefono.Text <> String.Empty And txtPrimernombre.Text <> String.Empty And txtPrimerapellido.Text <> String.Empty And Val(txtEdad.Text) - Int(Val(txtEdad.Text)) = 0 And txtEdad.Text <> String.Empty And txtSegundonombre.Text <> String.Empty And txtSegundoapellido.Text <> String.Empty And txtIdentidad.Text <> String.Empty Then
+            If Me.ValidateChildren And txtTelefono.Text <> String.Empty And txtNombres.Text <> String.Empty And txtPrimerapellido.Text <> String.Empty And Val(mtbEdad.Text) - Int(Val(mtbEdad.Text)) = 0 And mtbEdad.Text <> String.Empty And txtSegundoapellido.Text <> String.Empty And txtIdentidad.Text <> String.Empty Then
+                abrirConexion()
+
+                EjecutarComando("insert into ENTIDADES values('" & txtTelefono.Text & "', '" & txtIdentidad.Text & "', '" & txtNombres.Text & "',
+                '" & txtPrimerapellido.Text & "', '" & txtSegundoapellido.Text & "', '" & mtbEdad.Text & "', '" & txtCorreo.Text & "' , '" & cmbSectores.SelectedItem & "', 0)")
+
                 MessageBox.Show("Datos registrados correctamente", "Registrar", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 Me.Close()
+                MenuPrincipal.Show()
+
             Else
                 MessageBox.Show("Ingrese correctamente los datos solicitados", "Registrar", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 txtIdentidad.Clear()
-                txtPrimernombre.Clear()
+                txtNombres.Clear()
                 txtPrimerapellido.Clear()
-                txtEdad.Clear()
+                mtbEdad.Clear()
                 txtTelefono.Clear()
-                txtSegundonombre.Clear()
+                txtNombres.Clear()
                 txtSegundoapellido.Clear()
 
             End If
         Catch ex As Exception
+            MessageBox.Show("Error al intentar registrar", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
 
         End Try
         txtIdentidad.Clear()
-        txtPrimernombre.Clear()
+        txtNombres.Clear()
         txtPrimerapellido.Clear()
-        txtEdad.Clear()
+        mtbEdad.Clear()
         txtTelefono.Clear()
-        txtSegundonombre.Clear()
+        txtNombres.Clear()
         txtSegundoapellido.Clear()
 
 
@@ -48,11 +75,7 @@ Public Class AgregarCliente
         End If
     End Sub
 
-    Private Sub txtPrimernombre_TextChanged(sender As Object, e As EventArgs) Handles txtPrimernombre.TextChanged
-
-    End Sub
-
-    Private Sub txtPrimernombre_Validating(sender As Object, e As CancelEventArgs) Handles txtPrimernombre.Validating
+    Private Sub txtNombres_Validating(sender As Object, e As CancelEventArgs) Handles txtNombres.Validating
         If DirectCast(sender, TextBox).Text.Length > 0 Then
             Me.erroricono.SetError(sender, "")
         Else
@@ -72,12 +95,12 @@ Public Class AgregarCliente
         End If
     End Sub
 
-    Private Sub txtEdad_TextChanged(sender As Object, e As EventArgs) Handles txtEdad.TextChanged
+    Private Sub txtEdad_TextChanged(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub txtEdad_Validating(sender As Object, e As CancelEventArgs) Handles txtEdad.Validating
-        If ((Val(txtEdad.Text) - Int(Val(txtEdad.Text))) = 0) And (txtEdad.Text <> String.Empty) Then
+    Private Sub txtEdad_Validating(sender As Object, e As CancelEventArgs)
+        If ((Val(mtbEdad.Text) - Int(Val(mtbEdad.Text))) = 0) And (mtbEdad.Text <> String.Empty) Then
             Me.erroricono.SetError(sender, "")
         Else
             Me.erroricono.SetError(sender, "Ingrese su edad")
@@ -96,28 +119,8 @@ Public Class AgregarCliente
         End If
     End Sub
 
-    Private Sub txtSegundonombre_TextChanged(sender As Object, e As EventArgs) Handles txtSegundonombre.TextChanged
-
-    End Sub
-
-    Private Sub txtSegundonombre_Validating(sender As Object, e As CancelEventArgs) Handles txtSegundonombre.Validating
-        If DirectCast(sender, TextBox).Text.Length > 0 Then
-            Me.erroricono.SetError(sender, "")
-        Else
-            Me.erroricono.SetError(sender, "Ingrese su Segundo nombre")
-        End If
-    End Sub
-
     Private Sub txtSegundoapellido_TextChanged(sender As Object, e As EventArgs) Handles txtSegundoapellido.TextChanged
 
-    End Sub
-
-    Private Sub txtSegundoapellido_Validating(sender As Object, e As CancelEventArgs) Handles txtSegundoapellido.Validating
-        If DirectCast(sender, TextBox).Text.Length > 0 Then
-            Me.erroricono.SetError(sender, "")
-        Else
-            Me.erroricono.SetError(sender, "Ingrese su segundo apellido")
-        End If
     End Sub
 
     Private Sub txtIdentidad_MouseHover(sender As Object, e As EventArgs) Handles txtIdentidad.MouseHover
@@ -126,31 +129,15 @@ Public Class AgregarCliente
         mensaje.ToolTipIcon = ToolTipIcon.Info
     End Sub
 
-    Private Sub txtPrimernombre_MouseHover(sender As Object, e As EventArgs) Handles txtPrimernombre.MouseHover
+    Private Sub txtNombres_MouseHover(sender As Object, e As EventArgs) Handles txtNombres.MouseHover
         mensaje.SetToolTip(txtIdentidad, "Ingrese su primer nombre")
         mensaje.ToolTipTitle = "Primer Nombre"
         mensaje.ToolTipIcon = ToolTipIcon.Info
     End Sub
 
-    Private Sub txtPrimerapellido_MouseHover(sender As Object, e As EventArgs) Handles txtPrimerapellido.MouseHover
-        mensaje.SetToolTip(txtIdentidad, "Ingrese su primer apellido")
-        mensaje.ToolTipTitle = "Primer apellido"
-        mensaje.ToolTipIcon = ToolTipIcon.Info
-    End Sub
-
-    Private Sub txtEdad_MouseHover(sender As Object, e As EventArgs) Handles txtEdad.MouseHover
+    Private Sub mtbEdad_MouseHover(sender As Object, e As EventArgs)
         mensaje.SetToolTip(txtIdentidad, "Ingrese su edad")
         mensaje.ToolTipTitle = "Edad"
-        mensaje.ToolTipIcon = ToolTipIcon.Info
-    End Sub
-
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub ComboBox1_MouseHover(sender As Object, e As EventArgs) Handles ComboBox1.MouseHover
-        mensaje.SetToolTip(txtIdentidad, "Seleccione su sexo")
-        mensaje.ToolTipTitle = "Sexo"
         mensaje.ToolTipIcon = ToolTipIcon.Info
     End Sub
 
@@ -160,7 +147,7 @@ Public Class AgregarCliente
         mensaje.ToolTipIcon = ToolTipIcon.Info
     End Sub
 
-    Private Sub txtSegundonombre_MouseHover(sender As Object, e As EventArgs) Handles txtSegundonombre.MouseHover
+    Private Sub txtSegundonombre_MouseHover(sender As Object, e As EventArgs)
         mensaje.SetToolTip(txtIdentidad, "Ingrese su segundo nombre")
         mensaje.ToolTipTitle = "Segundo nombre"
         mensaje.ToolTipIcon = ToolTipIcon.Info
@@ -170,5 +157,26 @@ Public Class AgregarCliente
         mensaje.SetToolTip(txtIdentidad, "Ingrese su segundo apellido")
         mensaje.ToolTipTitle = "Segundo apellido"
         mensaje.ToolTipIcon = ToolTipIcon.Info
+    End Sub
+
+    Private Sub AgregarCliente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        abrirConexion()
+        llenarComboBox(cmbSectores, "select idSector from DIRECCIONES", "idSector")
+    End Sub
+
+    Private Sub btnMinimizar_Click(sender As Object, e As EventArgs) Handles btnMinimizar.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
+
+    Private Sub btnCerrar_Click(sender As Object, e As EventArgs) Handles btnCerrar.Click
+        Me.Close()
+        MenuPrincipal.Show()
+
+    End Sub
+
+    Private Sub cmbSectores_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbSectores.SelectedIndexChanged
+        Dim barr As String = obtenerVariableCadena("select barrio from DIRECCIONES where idSector = '" & cmbSectores.Text & "'", "barrio")
+        txtBarrioMostrar.Text = barr
+
     End Sub
 End Class

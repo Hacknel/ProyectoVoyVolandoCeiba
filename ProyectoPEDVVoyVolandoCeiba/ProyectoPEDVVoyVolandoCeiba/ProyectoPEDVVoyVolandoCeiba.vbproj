@@ -74,16 +74,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.vb" />
-    <Compile Include="MenuPrincipal\Opciones\AgregarCliente.Designer.vb">
-      <DependentUpon>AgregarCliente.vb</DependentUpon>
+    <Compile Include="MenuPrincipal\Opciones\agregarCliente.Designer.vb">
+      <DependentUpon>agregarCliente.vb</DependentUpon>
     </Compile>
-    <Compile Include="MenuPrincipal\Opciones\AgregarCliente.vb">
+    <Compile Include="MenuPrincipal\Opciones\agregarCliente.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuPrincipal\Opciones\EstadoTrabajadores.Designer.vb">
-      <DependentUpon>EstadoTrabajadores.vb</DependentUpon>
+    <Compile Include="MenuPrincipal\Opciones\estadoTrabajadores.Designer.vb">
+      <DependentUpon>estadoTrabajadores.vb</DependentUpon>
     </Compile>
-    <Compile Include="MenuPrincipal\Opciones\EstadoTrabajadores.vb">
+    <Compile Include="MenuPrincipal\Opciones\estadoTrabajadores.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MenuPrincipal\Opciones\formMandado.vb" />
@@ -130,14 +130,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="MenuPrincipal\Opciones\AgregarCliente.resx">
-      <DependentUpon>AgregarCliente.vb</DependentUpon>
+    <EmbeddedResource Include="MenuPrincipal\Opciones\agregarCliente.resx">
+      <DependentUpon>agregarCliente.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuPrincipal\Opciones\EstadoTrabajadores.resx">
-      <DependentUpon>EstadoTrabajadores.vb</DependentUpon>
+    <EmbeddedResource Include="MenuPrincipal\Opciones\estadoTrabajadores.resx">
+      <DependentUpon>estadoTrabajadores.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal\Opciones\mandado.resx">
       <DependentUpon>mandado.vb</DependentUpon>

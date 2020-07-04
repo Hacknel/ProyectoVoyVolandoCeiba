@@ -10,7 +10,13 @@ Public Class MenuPrincipal
     End Sub
 
     Private Sub btnCerrar_Click(sender As Object, e As EventArgs) Handles btnCerrar.Click
-        End
+        If MessageBox.Show("¿Esta seguro que desea salir?", "Salir", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) = DialogResult.OK Then
+            End
+
+        Else
+
+        End If
+
     End Sub
 
     Private Sub btnMinimizar_Click(sender As Object, e As EventArgs) Handles btnMinimizar.Click
@@ -129,4 +135,10 @@ Public Class MenuPrincipal
 
     End Sub
 
+    Private Sub MenuPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        PanelIni.Visible = True
+        btnInicio.BackColor = Color.DimGray
+
+        abrirFormulario(bienvenidaInicio)
+    End Sub
 End Class

@@ -89,11 +89,11 @@ Partial Class mandado
         Me.GroupBox1.Controls.Add(Me.GroupBox2)
         Me.GroupBox1.Font = New System.Drawing.Font("Fugaz One", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.GroupBox1.Location = New System.Drawing.Point(13, 2)
+        Me.GroupBox1.Location = New System.Drawing.Point(-1, 2)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
-        Me.GroupBox1.Size = New System.Drawing.Size(895, 1101)
+        Me.GroupBox1.Size = New System.Drawing.Size(909, 1101)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mandado"
@@ -110,7 +110,7 @@ Partial Class mandado
         Me.GroupBox8.ForeColor = System.Drawing.Color.White
         Me.GroupBox8.Location = New System.Drawing.Point(411, 879)
         Me.GroupBox8.Name = "GroupBox8"
-        Me.GroupBox8.Size = New System.Drawing.Size(438, 209)
+        Me.GroupBox8.Size = New System.Drawing.Size(491, 209)
         Me.GroupBox8.TabIndex = 32
         Me.GroupBox8.TabStop = False
         Me.GroupBox8.Text = "Paquete"
@@ -127,7 +127,7 @@ Partial Class mandado
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(209, 33)
+        Me.Label16.Location = New System.Drawing.Point(238, 33)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(154, 29)
         Me.Label16.TabIndex = 37
@@ -160,7 +160,7 @@ Partial Class mandado
         Me.cmbTipoEnvio.Location = New System.Drawing.Point(256, 66)
         Me.cmbTipoEnvio.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbTipoEnvio.Name = "cmbTipoEnvio"
-        Me.cmbTipoEnvio.Size = New System.Drawing.Size(169, 32)
+        Me.cmbTipoEnvio.Size = New System.Drawing.Size(213, 32)
         Me.cmbTipoEnvio.TabIndex = 34
         '
         'txtDetalles
@@ -170,7 +170,7 @@ Partial Class mandado
         Me.txtDetalles.Margin = New System.Windows.Forms.Padding(4)
         Me.txtDetalles.Multiline = True
         Me.txtDetalles.Name = "txtDetalles"
-        Me.txtDetalles.Size = New System.Drawing.Size(272, 74)
+        Me.txtDetalles.Size = New System.Drawing.Size(336, 74)
         Me.txtDetalles.TabIndex = 33
         '
         'GroupBox7
@@ -181,9 +181,9 @@ Partial Class mandado
         Me.GroupBox7.Controls.Add(Me.cmbEncargado)
         Me.GroupBox7.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox7.ForeColor = System.Drawing.Color.White
-        Me.GroupBox7.Location = New System.Drawing.Point(53, 912)
+        Me.GroupBox7.Location = New System.Drawing.Point(13, 912)
         Me.GroupBox7.Name = "GroupBox7"
-        Me.GroupBox7.Size = New System.Drawing.Size(333, 153)
+        Me.GroupBox7.Size = New System.Drawing.Size(373, 153)
         Me.GroupBox7.TabIndex = 31
         Me.GroupBox7.TabStop = False
         Me.GroupBox7.Text = "Encargado"
@@ -191,7 +191,7 @@ Partial Class mandado
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(175, 52)
+        Me.Label14.Location = New System.Drawing.Point(223, 70)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(88, 29)
         Me.Label14.TabIndex = 29
@@ -200,7 +200,7 @@ Partial Class mandado
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(21, 52)
+        Me.Label13.Location = New System.Drawing.Point(18, 34)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(95, 29)
         Me.Label13.TabIndex = 28
@@ -211,20 +211,20 @@ Partial Class mandado
         Me.cmbEstadoPersona.Font = New System.Drawing.Font("Rockwell", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbEstadoPersona.FormattingEnabled = True
         Me.cmbEstadoPersona.Items.AddRange(New Object() {"Libre", "Ocupado"})
-        Me.cmbEstadoPersona.Location = New System.Drawing.Point(198, 85)
+        Me.cmbEstadoPersona.Location = New System.Drawing.Point(236, 103)
         Me.cmbEstadoPersona.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbEstadoPersona.Name = "cmbEstadoPersona"
-        Me.cmbEstadoPersona.Size = New System.Drawing.Size(105, 32)
+        Me.cmbEstadoPersona.Size = New System.Drawing.Size(125, 32)
         Me.cmbEstadoPersona.TabIndex = 23
         '
         'cmbEncargado
         '
         Me.cmbEncargado.Font = New System.Drawing.Font("Rockwell", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbEncargado.FormattingEnabled = True
-        Me.cmbEncargado.Location = New System.Drawing.Point(26, 85)
+        Me.cmbEncargado.Location = New System.Drawing.Point(23, 67)
         Me.cmbEncargado.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbEncargado.Name = "cmbEncargado"
-        Me.cmbEncargado.Size = New System.Drawing.Size(131, 32)
+        Me.cmbEncargado.Size = New System.Drawing.Size(193, 32)
         Me.cmbEncargado.TabIndex = 22
         '
         'GroupBox5
@@ -249,7 +249,8 @@ Partial Class mandado
         '
         'btnSolicitar
         '
-        Me.btnSolicitar.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.btnSolicitar.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnSolicitar.Font = New System.Drawing.Font("Impact", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSolicitar.Location = New System.Drawing.Point(589, 41)
         Me.btnSolicitar.Name = "btnSolicitar"
         Me.btnSolicitar.Size = New System.Drawing.Size(194, 56)
@@ -351,11 +352,11 @@ Partial Class mandado
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(446, 34)
+        Me.Label7.Location = New System.Drawing.Point(388, 33)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(95, 29)
-        Me.Label7.TabIndex = 27
-        Me.Label7.Text = "Nombre"
+        Me.Label7.Size = New System.Drawing.Size(194, 29)
+        Me.Label7.TabIndex = 28
+        Me.Label7.Text = "Nombre empresa"
         '
         'Label8
         '
@@ -395,7 +396,7 @@ Partial Class mandado
         Me.cmbEmpresasMan.Location = New System.Drawing.Point(491, 66)
         Me.cmbEmpresasMan.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbEmpresasMan.Name = "cmbEmpresasMan"
-        Me.cmbEmpresasMan.Size = New System.Drawing.Size(206, 32)
+        Me.cmbEmpresasMan.Size = New System.Drawing.Size(292, 32)
         Me.cmbEmpresasMan.TabIndex = 24
         '
         'GroupBox3
@@ -433,7 +434,7 @@ Partial Class mandado
         'btnVerificar
         '
         Me.btnVerificar.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.btnVerificar.Font = New System.Drawing.Font("Fugaz One", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnVerificar.Font = New System.Drawing.Font("Impact", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnVerificar.ForeColor = System.Drawing.Color.White
         Me.btnVerificar.Location = New System.Drawing.Point(35, 42)
         Me.btnVerificar.Name = "btnVerificar"
@@ -538,9 +539,9 @@ Partial Class mandado
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(429, 51)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(95, 29)
+        Me.Label2.Size = New System.Drawing.Size(194, 29)
         Me.Label2.TabIndex = 27
-        Me.Label2.Text = "Nombre"
+        Me.Label2.Text = "Nombre empresa"
         '
         'Label1
         '
@@ -557,7 +558,7 @@ Partial Class mandado
         Me.txtTelefono.Location = New System.Drawing.Point(69, 84)
         Me.txtTelefono.Margin = New System.Windows.Forms.Padding(4)
         Me.txtTelefono.Name = "txtTelefono"
-        Me.txtTelefono.Size = New System.Drawing.Size(191, 31)
+        Me.txtTelefono.Size = New System.Drawing.Size(207, 31)
         Me.txtTelefono.TabIndex = 20
         '
         'btnConsultar
@@ -588,7 +589,7 @@ Partial Class mandado
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.ClientSize = New System.Drawing.Size(951, 1102)
+        Me.ClientSize = New System.Drawing.Size(946, 1102)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(4)
@@ -627,7 +628,6 @@ Partial Class mandado
     Friend WithEvents Label1 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents GroupBox4 As GroupBox
-    Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents txtTelefonoMan As TextBox
     Friend WithEvents btnConsultarMan As Button
@@ -658,4 +658,5 @@ Partial Class mandado
     Friend WithEvents txtDetalles As TextBox
     Friend WithEvents Label14 As Label
     Friend WithEvents Label13 As Label
+    Friend WithEvents Label7 As Label
 End Class
