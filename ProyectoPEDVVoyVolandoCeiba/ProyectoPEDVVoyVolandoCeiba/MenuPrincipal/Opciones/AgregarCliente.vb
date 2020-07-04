@@ -1,5 +1,5 @@
 ﻿Imports System.ComponentModel
-Imports System.Runtime.InteropServices
+
 Public Class AgregarCliente
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
 
@@ -171,39 +171,4 @@ Public Class AgregarCliente
         mensaje.ToolTipTitle = "Segundo apellido"
         mensaje.ToolTipIcon = ToolTipIcon.Info
     End Sub
-
-#Region "Move form"
-    <DllImport("user32.DLL", EntryPoint:="ReleaseCapture")>
-    Private Shared Sub ReleaseCapture()
-    End Sub
-    <DllImport("user32.DLL", EntryPoint:="SendMessage")>
-    Private Shared Sub SendMessage(hWnd As IntPtr, wMs As Integer, wParam As Integer, lParam As Integer)
-
-    End Sub
-
-    Private Sub moverPanel_MouseMove(sender As Object, e As MouseEventArgs) Handles moverPanel.MouseMove
-        ReleaseCapture()
-        SendMessage(Me.Handle, &H112&, &HF012&, 0)
-
-    End Sub
-
-    Private Sub moverPanel_Paint(sender As Object, e As PaintEventArgs) Handles moverPanel.Paint
-        ReleaseCapture()
-        SendMessage(Me.Handle, &H112&, &HF012&, 0)
-    End Sub
-
-    Private Sub btnCerrar_Click(sender As Object, e As EventArgs) Handles btnCerrar.Click
-        Me.Close()
-    End Sub
-
-    Private Sub btnMinimizar_Click(sender As Object, e As EventArgs) Handles btnMinimizar.Click
-        Me.WindowState = FormWindowState.Minimized
-
-    End Sub
-
-    Private Sub Label4_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-#End Region
 End Class

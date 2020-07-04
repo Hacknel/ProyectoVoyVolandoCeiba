@@ -101,6 +101,7 @@ Public Class MenuPrincipal
         PanelAdmin.Visible = False
         btnAdmin.BackColor = Color.Transparent
 
+        abrirFormulario(mandado)
 
     End Sub
 

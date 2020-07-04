@@ -73,13 +73,20 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AgregarCliente.Designer.vb">
+    <Compile Include="Conexion.vb" />
+    <Compile Include="MenuPrincipal\Opciones\AgregarCliente.Designer.vb">
       <DependentUpon>AgregarCliente.vb</DependentUpon>
     </Compile>
-    <Compile Include="AgregarCliente.vb">
+    <Compile Include="MenuPrincipal\Opciones\AgregarCliente.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formMandado.vb" />
+    <Compile Include="MenuPrincipal\Opciones\EstadoTrabajadores.Designer.vb">
+      <DependentUpon>EstadoTrabajadores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal\Opciones\EstadoTrabajadores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal\Opciones\formMandado.vb" />
     <Compile Include="Login\Login.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -87,10 +94,10 @@
       <DependentUpon>Login.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mandado.Designer.vb">
+    <Compile Include="MenuPrincipal\Opciones\mandado.Designer.vb">
       <DependentUpon>mandado.vb</DependentUpon>
     </Compile>
-    <Compile Include="mandado.vb">
+    <Compile Include="MenuPrincipal\Opciones\mandado.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MenuPrincipal\MenuPrincipal.Designer.vb">
@@ -123,13 +130,16 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AgregarCliente.resx">
+    <EmbeddedResource Include="MenuPrincipal\Opciones\AgregarCliente.resx">
       <DependentUpon>AgregarCliente.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="mandado.resx">
+    <EmbeddedResource Include="MenuPrincipal\Opciones\EstadoTrabajadores.resx">
+      <DependentUpon>EstadoTrabajadores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal\Opciones\mandado.resx">
       <DependentUpon>mandado.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal\MenuPrincipal.resx">
@@ -146,6 +156,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -155,7 +166,6 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_administrator_male_64.png" />
