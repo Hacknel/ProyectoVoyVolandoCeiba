@@ -30,13 +30,8 @@ Partial Class MenuPrincipal
         Me.btnMinimizar = New System.Windows.Forms.Button()
         Me.btnCerrar = New System.Windows.Forms.Button()
         Me.panelIOpciones = New System.Windows.Forms.Panel()
-        Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.PanelPers = New System.Windows.Forms.Panel()
         Me.PanelAdmin = New System.Windows.Forms.Panel()
         Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -47,20 +42,23 @@ Partial Class MenuPrincipal
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.btnRestaurar = New System.Windows.Forms.Button()
-        Me.btnDesplegarMenu = New System.Windows.Forms.Button()
-        Me.btnMaximizar = New System.Windows.Forms.Button()
-        Me.btnMinimizar = New System.Windows.Forms.Button()
-        Me.btnCerrar = New System.Windows.Forms.Button()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.PanelEsta = New System.Windows.Forms.Panel()
+        Me.PanelManda = New System.Windows.Forms.Panel()
+        Me.PanelIni = New System.Windows.Forms.Panel()
+        Me.PanelForms = New System.Windows.Forms.Panel()
         Me.panelVentanas.SuspendLayout()
         Me.panelIOpciones.SuspendLayout()
-        Me.Panel5.SuspendLayout()
-        Me.Panel4.SuspendLayout()
-        Me.Panel3.SuspendLayout()
+        Me.Panel6.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel3.SuspendLayout()
+        Me.Panel4.SuspendLayout()
+        Me.Panel5.SuspendLayout()
         Me.SuspendLayout()
         '
         'panelVentanas
@@ -160,45 +158,26 @@ Partial Class MenuPrincipal
         'panelIOpciones
         '
         Me.panelIOpciones.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.panelIOpciones.Controls.Add(Me.PanelAdmin)
-        Me.panelIOpciones.Controls.Add(Me.Panel6)
-        Me.panelIOpciones.Controls.Add(Me.Panel5)
-        Me.panelIOpciones.Controls.Add(Me.Panel4)
-        Me.panelIOpciones.Controls.Add(Me.Panel3)
         Me.panelIOpciones.Controls.Add(Me.Panel2)
         Me.panelIOpciones.Controls.Add(Me.btnInicio)
         Me.panelIOpciones.Controls.Add(Me.btnEstadoMandado)
+        Me.panelIOpciones.Controls.Add(Me.Panel5)
         Me.panelIOpciones.Controls.Add(Me.btnAdmin)
+        Me.panelIOpciones.Controls.Add(Me.Panel4)
         Me.panelIOpciones.Controls.Add(Me.btnMandado)
+        Me.panelIOpciones.Controls.Add(Me.Panel3)
         Me.panelIOpciones.Controls.Add(Me.Panel1)
+        Me.panelIOpciones.Controls.Add(Me.Panel6)
         Me.panelIOpciones.Dock = System.Windows.Forms.DockStyle.Left
         Me.panelIOpciones.Location = New System.Drawing.Point(0, 51)
         Me.panelIOpciones.Name = "panelIOpciones"
         Me.panelIOpciones.Size = New System.Drawing.Size(300, 824)
         Me.panelIOpciones.TabIndex = 1
         '
-        'Panel7
-        '
-        Me.Panel7.BackColor = System.Drawing.Color.Silver
-        Me.Panel7.Controls.Add(Me.PanelPers)
-        Me.Panel7.Location = New System.Drawing.Point(0, 473)
-        Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(10, 64)
-        Me.Panel7.TabIndex = 2
-        '
-        'PanelPers
-        '
-        Me.PanelPers.BackColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(118, Byte), Integer))
-        Me.PanelPers.Location = New System.Drawing.Point(0, 0)
-        Me.PanelPers.Name = "PanelPers"
-        Me.PanelPers.Size = New System.Drawing.Size(10, 64)
-        Me.PanelPers.TabIndex = 5
-        Me.PanelPers.Visible = False
-        '
         'PanelAdmin
         '
         Me.PanelAdmin.BackColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(118, Byte), Integer))
-        Me.PanelAdmin.Location = New System.Drawing.Point(0, 388)
+        Me.PanelAdmin.Location = New System.Drawing.Point(0, 0)
         Me.PanelAdmin.Name = "PanelAdmin"
         Me.PanelAdmin.Size = New System.Drawing.Size(10, 64)
         Me.PanelAdmin.TabIndex = 6
@@ -207,37 +186,11 @@ Partial Class MenuPrincipal
         'Panel6
         '
         Me.Panel6.BackColor = System.Drawing.Color.Silver
+        Me.Panel6.Controls.Add(Me.PanelAdmin)
         Me.Panel6.Location = New System.Drawing.Point(0, 388)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(10, 64)
         Me.Panel6.TabIndex = 2
-        '
-        'Panel5
-        '
-        Me.Panel5.BackColor = System.Drawing.Color.Silver
-        Me.Panel5.Controls.Add(Me.PanelEsta)
-        Me.Panel5.Location = New System.Drawing.Point(0, 305)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(10, 64)
-        Me.Panel5.TabIndex = 2
-        '
-        'Panel4
-        '
-        Me.Panel4.BackColor = System.Drawing.Color.Silver
-        Me.Panel4.Controls.Add(Me.PanelManda)
-        Me.Panel4.Location = New System.Drawing.Point(0, 219)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(10, 64)
-        Me.Panel4.TabIndex = 1
-        '
-        'Panel3
-        '
-        Me.Panel3.BackColor = System.Drawing.Color.Silver
-        Me.Panel3.Controls.Add(Me.PanelIni)
-        Me.Panel3.Location = New System.Drawing.Point(0, 134)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(10, 64)
-        Me.Panel3.TabIndex = 0
         '
         'Panel2
         '
@@ -385,32 +338,32 @@ Partial Class MenuPrincipal
         Me.PictureBox2.TabIndex = 8
         Me.PictureBox2.TabStop = False
         '
-        'panelForms
+        'Panel3
         '
-        Me.panelForms.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.panelForms.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.panelForms.Location = New System.Drawing.Point(300, 51)
-        Me.panelForms.Name = "panelForms"
-        Me.panelForms.Size = New System.Drawing.Size(935, 824)
-        Me.panelForms.TabIndex = 2
+        Me.Panel3.BackColor = System.Drawing.Color.Silver
+        Me.Panel3.Controls.Add(Me.PanelEsta)
+        Me.Panel3.Location = New System.Drawing.Point(0, 305)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(10, 64)
+        Me.Panel3.TabIndex = 7
         '
-        'PanelPers
+        'Panel4
         '
-        Me.PanelPers.BackColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(118, Byte), Integer))
-        Me.PanelPers.Location = New System.Drawing.Point(0, 0)
-        Me.PanelPers.Name = "PanelPers"
-        Me.PanelPers.Size = New System.Drawing.Size(10, 64)
-        Me.PanelPers.TabIndex = 5
-        Me.PanelPers.Visible = False
+        Me.Panel4.BackColor = System.Drawing.Color.Silver
+        Me.Panel4.Controls.Add(Me.PanelManda)
+        Me.Panel4.Location = New System.Drawing.Point(0, 219)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(10, 64)
+        Me.Panel4.TabIndex = 8
         '
-        'PanelAdmin
+        'Panel5
         '
-        Me.PanelAdmin.BackColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(118, Byte), Integer))
-        Me.PanelAdmin.Location = New System.Drawing.Point(0, 388)
-        Me.PanelAdmin.Name = "PanelAdmin"
-        Me.PanelAdmin.Size = New System.Drawing.Size(10, 64)
-        Me.PanelAdmin.TabIndex = 6
-        Me.PanelAdmin.Visible = False
+        Me.Panel5.BackColor = System.Drawing.Color.Silver
+        Me.Panel5.Controls.Add(Me.PanelIni)
+        Me.Panel5.Location = New System.Drawing.Point(0, 134)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(10, 64)
+        Me.Panel5.TabIndex = 9
         '
         'PanelEsta
         '
@@ -418,7 +371,7 @@ Partial Class MenuPrincipal
         Me.PanelEsta.Location = New System.Drawing.Point(0, 0)
         Me.PanelEsta.Name = "PanelEsta"
         Me.PanelEsta.Size = New System.Drawing.Size(10, 64)
-        Me.PanelEsta.TabIndex = 7
+        Me.PanelEsta.TabIndex = 10
         Me.PanelEsta.Visible = False
         '
         'PanelManda
@@ -427,7 +380,7 @@ Partial Class MenuPrincipal
         Me.PanelManda.Location = New System.Drawing.Point(0, 0)
         Me.PanelManda.Name = "PanelManda"
         Me.PanelManda.Size = New System.Drawing.Size(10, 64)
-        Me.PanelManda.TabIndex = 4
+        Me.PanelManda.TabIndex = 11
         Me.PanelManda.Visible = False
         '
         'PanelIni
@@ -436,15 +389,24 @@ Partial Class MenuPrincipal
         Me.PanelIni.Location = New System.Drawing.Point(0, 0)
         Me.PanelIni.Name = "PanelIni"
         Me.PanelIni.Size = New System.Drawing.Size(10, 64)
-        Me.PanelIni.TabIndex = 3
+        Me.PanelIni.TabIndex = 12
         Me.PanelIni.Visible = False
+        '
+        'PanelForms
+        '
+        Me.PanelForms.BackColor = System.Drawing.Color.DarkGray
+        Me.PanelForms.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelForms.Location = New System.Drawing.Point(300, 51)
+        Me.PanelForms.Name = "PanelForms"
+        Me.PanelForms.Size = New System.Drawing.Size(935, 824)
+        Me.PanelForms.TabIndex = 2
         '
         'MenuPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1235, 875)
-        Me.Controls.Add(Me.panelForms)
+        Me.Controls.Add(Me.PanelForms)
         Me.Controls.Add(Me.panelIOpciones)
         Me.Controls.Add(Me.panelVentanas)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -454,22 +416,22 @@ Partial Class MenuPrincipal
         Me.Text = "MenuPrincipal"
         Me.panelVentanas.ResumeLayout(False)
         Me.panelIOpciones.ResumeLayout(False)
-        Me.Panel5.ResumeLayout(False)
-        Me.Panel4.ResumeLayout(False)
-        Me.Panel3.ResumeLayout(False)
+        Me.Panel6.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel4.ResumeLayout(False)
+        Me.Panel5.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents panelVentanas As Panel
     Friend WithEvents panelIOpciones As Panel
-    Friend WithEvents panelForms As Panel
     Friend WithEvents btnMinimizar As Button
     Friend WithEvents btnCerrar As Button
     Friend WithEvents btnMaximizar As Button
@@ -485,12 +447,13 @@ Partial Class MenuPrincipal
     Friend WithEvents Label2 As Label
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label1 As Label
-    Friend WithEvents Panel3 As Panel
     Friend WithEvents Panel6 As Panel
-    Friend WithEvents Panel5 As Panel
-    Friend WithEvents Panel4 As Panel
     Friend WithEvents PanelAdmin As Panel
-    Friend WithEvents PanelManda As Panel
-    Friend WithEvents PanelEsta As Panel
+    Friend WithEvents Panel5 As Panel
     Friend WithEvents PanelIni As Panel
+    Friend WithEvents Panel4 As Panel
+    Friend WithEvents PanelManda As Panel
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents PanelEsta As Panel
+    Friend WithEvents PanelForms As Panel
 End Class
